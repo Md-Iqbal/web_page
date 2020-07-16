@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=l">
+    <title></title>
+    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <div class="nav-logo">
+          <img src="Icon.jpg" alt="LOGO">
+        </div>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Shop</li></a>
+            <a href="#"><li>About</li></a>
+            <!--
+            <a href="#"><li>Automated Rifle</li></a>
+            <a href="#"><li>Bolt Action Sniper</li></a>
+            <a href="#"><li>Sniper Rifle</li></a>
+            <a href="#"><li>Shotgun</li></a>
+            <a href="#"><li>Pistol</li></a>
+            <a href="#"><li>Grenade & Skin</li></a> -->
+          </ul>
+          <button type="button" class="btn">Sign Up</button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="banner-title">
+        <h1><span>Happiness lies in the sound of gunshot.</span>Very few gets this.</h1>
+        <button type="button" class="btn">Explore</button>
+      </div>
+      <div class="vertical-bar">
+        <div class="search-icon">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-search-plus"></i>
+        </div>
+        <div class="social-icon">
+          <i class="fa fa-envelope"></i>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-pinterest"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+      </div>
+      <div class="notification">
+        <div class="content">
+          <small>Contact with us to get your dream.</small>
+          <p><a href="">PREV</a><a href="">NEXT</a></p>s
+          <div class="notification-img">
+            <img src="images.jpg" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var show = document.getElementById("nav-links");
+      function showMenu(){
+        show.style.right = "0";
+      }
+      function closeMenu(){
+        show.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
